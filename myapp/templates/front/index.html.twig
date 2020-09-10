@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block body %}
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron jumboindex">
+    <div class="blure anim" data-delay=".5s">
+      <div class="center">
+        <h1 class="display-3">{{ framework }}!</h1>
+        <p>Bienvenido a Txs Origins, tu plataforma de diseño rápida y sencilla, aqui encontrarás todo lo que necesitas para tu producto.</p>
+        <p><a class="btn btn-primary btn-lg" href="#cont" role="button">Saber más &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container anim" data-delay=".5s" id="cont">
+    <!-- Example row of columns -->
+    <div class="row centertextproject">
+          <div class="encabezado">
+            <h1>Conócenos</h1>
+            <hr>
+            <p>Somos una empresa de diseño inspirada en el minimalismo y la abstracción en conceptos artísticos.
+                Desde <b style="color: var(--primary);">Texas Origins S.A</b> queremos llegar a todas las personas,
+                 quienes necesiten un empuje a nivel de marketing para su producto, nosotros nos encargamos.
+                  Tu <b style="color: var(--primary);">Producto</b>
+                   con nosotros.</p>
+          </div>
+        </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Diseño</h2>
+        <p>Somos profesionales en diseño de producto puestos a tu disposición a tiempo completo para adaptar tus ideas a la mejor imagen de tu marca. </p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+      <div class="col-md-4">
+        <h2>Adaptabilidad</h2>
+        <p>El diseño adaptable o responsive es importante para que tu producto se vea correctamente en todo tipo de dispositivos, nosotros somos especialistas en ello. </p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+      <div class="col-md-4">
+        <h2>Control</h2>
+        <p>De inicio a fin, tu tienes el control total de la imagen de tu producto, no tomamos decisiones arbitrarias, tu eliges y tu decides.</p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+    </div>
+        <hr>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Marketing</h2>
+        <p>Lanzamos tu campaña de marketing personalizada en redes sociales, la captación de clientes es una de nuestras especialidades. </p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+      <div class="col-md-4">
+        <h2>SEO</h2>
+        <p>El posicionamiento en buscadores, hoy en dia es una parte muy importante para que las personas puedan encontrar facilmente tu producto. </p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+      <div class="col-md-4">
+        <h2>Servidores</h2>
+        <p>Te ofrecemos nuestros servidores optimizados a medida de tus necesidades, para que no tengas que preocuparte de nada.</p>
+        {# <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> #}
+      </div>
+    </div>
+  </div> <!-- /container -->
+</main>
+
+{% endblock %}

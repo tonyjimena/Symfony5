@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projects{% endblock %}
+
+{% block body %}
+<main role="main">
+ <section class="jumbotron text-center jumboprojects" id="slideshow">
+    <div class="blure2">
+      <div class="center">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <script>var userGranted = 1;</script>
+        <form id="fupForm" enctype="multipart/form-data">
+          <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required />
+          </div>
+          <div class="form-group">
+              <label for="info">Información</label>
+              <input type="info" class="form-control" id="info" name="info" placeholder="Enter info" required />
+          </div>
+          <div class="form-group">
+              <label for="place">Lugar</label>
+              <input type="place" class="form-control" id="place" name="place" placeholder="Enter place" required />
+          </div>
+          <div class="form-group">
+              <label for="file">Imagen</label>
+              <input type="file" class="form-control" id="file" name="file" required />
+                  <p id="alerta"></p>
+                  <output id="list"></output>
+          </div>
+          <input type="submit" name="submit" class="btn btn-primary submitBtn" value="SUBMIT"/>
+        </form>
+          <!--{{ form_start(form, {'attr': {'action': '/projects/new', 'id': 'fupForm'}}) }}
+            <div class="form-group">
+                {{ form_row(form.name, {'attr': {'class': 'form-control', 'id': 'name', 'name': 'name'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(form.info, {'attr': {'class': 'form-control', 'id': 'info', 'name': 'info'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(form.place, {'attr': {'class': 'form-control', 'id': 'place', 'name': 'place'}}) }}
+            </div>
+            <!--<div class="form-group">
+                {{ form_row(form.image, {'attr': {'class': 'form-control'}}) }}
+                <output id="list"></output>
+            </div>--><!--
+            <div class="form-group">
+                <div>
+                  <label for="file">image</label>
+                  <input type="file" id="file" name="file" class="form-control">
+                  <p id="alerta"></p>
+                  <output id="list"></output>
+                </div>
+            </div>
+              {{ form_row(form.save, {'attr': {'class': 'btn btn-primary submitBtn', 'value': 'submit'}}) }}
+            {{ form_end(form) }}-->
+        {% else %}
+            <script>var userGranted = 0;</script>
+            <h1>Inicia sesion</h1>
+            <h2>Para crear y gestionar proyectos</h2>
+            <ul class="checkboxer">
+              <li><h3>Producción </h3></li>
+              <li><h3>Diseño </h3></li>
+              <li><h3>Accesibilidad </h3></li>
+              <li><h3>Adaptable </h3></li>
+            </ul>
+        {% endif %} 
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light" id="album">
+    <div class="container">
+      <div class="row centertextproject">
+          <div class="encabezado">
+            <h1>Nuestros proyectos</h1>
+            <hr>
+            <p>Aquí puedes ver los proyectos y productos con los que hemos trabajado, a nivel europeo nuestro trabajo en
+            <b style="color: var(--primary);">Texas Origins</b> ha sido reconocido gracias a las empresas que han confiado en nosotros,
+                 nuestros proyectos se basan en una metodología simple y rápida desde el principio.
+                  La transparencia y cercanía de nuestra empresa es nuestro sello personal, 
+                 nuestros diseños son variados en fondo y forma. 
+                 </p>
+          </div>
+        </div>
+      <div class="row centertextproject" style="margin-bottom: 3%;">
+      <p><a id="more"class="users btn btn-primary btn-lg" href="#album" role="button" onClick="fetchProjects()">Ver más &raquo;</a></p>
+      <input class="form-control form-control-lg" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por nombre..." style="display: none;">
+      </div>
+      <div class="row" id="projectsajax">
+        
+
+  
+      </div>
+  </div>
+  </div>
+</main>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/fetch.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Info{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <!-- Heading Row -->
+    <div class="row align-items-center my-5" id="info-content">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="../img/skyline.jpeg" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Toda la información que necesitas</h1>
+        <p>Somos una empresa emergente, con todo lo que necesitas para dar a conocer tu producto, desde el principio de la idea
+        hasta la implementación y producción directa, tenemos en cuenta todas las fases de producto</p>
+        <a class="btn btn-primary" href="#conocenos">Conocenos!</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center" id="conocenos">
+      <div class="card-body">
+        <p class="text-white m-0">En Texas Origins nos comprometemos con el medio ambiente, la calidad, transparencia empresarial y la responsabilidad con nuestros clientes.</p>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Marketing Digital</h2>
+            <p class="card-text">Nuestro equipo de profesionales se encarga de la campaña publicitaria a medida de su producto y necesidades.</p>
+          </div>
+          <div class="card-footer">
+            <a href="/contact" class="btn btn-primary btn-sm">Más información</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Puesta en marcha</h2>
+            <p class="card-text">Cliente y servidor, producción y desarrollo gestionado por nuestro equipo de diseño y desarrollo digital, para todos los dispositivos y para todas las personas.</p>
+          </div>
+          <div class="card-footer">
+            <a href="/contact" class="btn btn-primary btn-sm">Más información</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Mantenimiento</h2>
+            <p class="card-text">Disponemos de un equipo técnico de primer nivel para controlar todas las incidencias que su servidor pueda tener, lo más rápido posible.</p>
+          </div>
+          <div class="card-footer">
+            <a href="/contact" class="btn btn-primary btn-sm">Más información</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->  
+</div>
+
+{% endblock %}

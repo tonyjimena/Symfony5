@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}View Project{% endblock %}
+
+{% block body %}
+<main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron jumboindex jumboindexview" style="background: url('{{ asset('uploads/images/') }}{{ projects.image }}') no-repeat center;">
+    <div class="blureview">
+      <div class="center">
+        <h1 class="display-3">Proyecto {{ projects.name }}!</h1>
+        <h4>{{ projects.info }}</h4>
+        <p>Lugar: {{projects.place}} id: {{projects.id}}</p>
+        {# <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> #}
+      </div>
+    </div>
+  </div>
+  </div><!-- /.container -->
+
+
+</main>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Regístrate{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="text-center">
+    {{ form_start(registrationForm, {'attr': {'class': 'form-signin'}}) }}
+    <img class="mb-4" src="https://image.flaticon.com/icons/svg/2037/2037710.svg" width="72" height="72">
+        <h1>Registro</h1>
+
+        <div class="form-group">
+            {{ form_row(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(registrationForm.plainPassword, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(registrationForm.condiciones) }}
+        </div>
+        <button class="btn btn-primary">Sign UP!</button>
+    {{ form_end(registrationForm) }}
+</div>
+</div>
+{% endblock %}
