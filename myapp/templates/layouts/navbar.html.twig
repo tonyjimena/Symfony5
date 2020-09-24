@@ -15,38 +15,38 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/">Home</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/">Home</a>
             </li>
             <!--<li class="nav-item">
-                <a class="nav-link animsition-link" href="/services">Services</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/services">Services</a>
             </li>-->
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/projectsajax">Proyectos</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/projectsajax">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/contact">Contacto</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/contact">Contacto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/info">Información</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/info">Información</a>
             </li>
         </ul>
         <hr>
         {% if is_granted('IS_AUTHENTICATED_FULLY') %}
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/logout">Log-out <span class="sr-only">(current)</span></a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/logout">Log-out <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/user">{{ app.user.email }}<span class="sr-only">(current)</span></a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/user">{{ app.user.email }}<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         {% else %}
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/login">Log-in <span class="sr-only">(current)</span></a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/login">Log-in <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link animsition-link" href="/register">Sign Up</a>
+                <a class="nav-link animsition-link" href="{{ app.request.baseUrl }}/register">Sign Up</a>
             </li>
         </ul>
         {% endif %}

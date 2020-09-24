@@ -1,0 +1,8 @@
+#path/to/project/.htaccess
+
+# Rewrite all requests to subdirectory, except exists file requests
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ /public/$1 [QSA,L]
+</IfModule>
