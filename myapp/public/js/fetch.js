@@ -22,7 +22,7 @@ function renderProjects(projects) {
         setTimeout (() => {
             $("#projectsajax").append(`
             <div class="col-md-4" id="card-${project.id}">
-                <div class="card mb-4"><a href="/projects/view/${project.id}">
+                <div class="card mb-4"><a href="./projects/view/${project.id}">
                     <img id="image-${project.id}" src="uploads/images/${project.image}" class="bd-placeholder-img card-img-top"
                     width="100%" height="225">
                     </img></a>

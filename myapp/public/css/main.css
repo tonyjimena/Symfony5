@@ -2,32 +2,32 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 body p {
   font-size: 1.1vw;
 }
 
-#front > main > div.jumbotron.jumboindex.jumboindexview > div{
+#front > main > div.jumbotron.jumboindex.jumboindexview > div {
   top: 13em !important;
 }
-#info-content{
+#info-content {
   padding-top: 5%;
 }
 #cargador {
-    display: none;
-    position: fixed !important;
-    width: 3rem;
-    height: 3rem;
-    z-index: 99999;
-    top: 11%;
-    right: 3%;
-  }
+  display: none;
+  position: fixed !important;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99999;
+  top: 11%;
+  right: 3%;
+}
 
 .contenedor {
   left: 80% !important;
-  position: fixed!important;
+  position: fixed !important;
   top: 30% !important;
   height: 27em;
   display: flex;
@@ -54,18 +54,17 @@ body p {
 
 #front {
   background-color: #343a4024;
-
 }
 
 /* jumbotrons */
 
-.jumboprojects{
-  background: url('../img/skyline.jpeg') no-repeat center center;
+.jumboprojects {
+  background: url("../img/skyline.jpeg") no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
 .jumboindex {
-  background: url('../img/fondo.jpg') no-repeat center center;
+  background: url("../img/fondo.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -74,160 +73,156 @@ body p {
 }
 
 /* Spiner loader y transiciones de pagina */
-      #page-loader {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1000;
-        background: #343a40 none repeat scroll 0% 0%;
-        z-index: 99999;
-        }
+#page-loader {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: #343a40 none repeat scroll 0% 0%;
+  z-index: 99999;
+}
 
-        #page-loader .preloader-interior {
-            display: block;
-            position: relative;
-            left: 50%;
-            top: 50%;
-            width: 150px;
-            height: 150px;
-            margin: -75px 0 0 -75px;
-            border-radius: 50%;
-            border: 3px solid transparent;
-            border-top-color: #8a8a8a;
-            -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-                  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-        }
-        #page-loader .preloader-interior:before {
-            content: "";
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            right: 5px;
-            bottom: 5px;
-            border-radius: 50%;
-            border: 3px solid transparent;
-            border-top-color: #ffffff;
-        
-            -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-              animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-        }
-        
-        #page-loader .preloader-interior:after {
-            content: "";
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            right: 15px;
-            bottom: 15px;
-            border-radius: 50%;
-            border: 3px solid transparent;
-            border-top-color: #007bff;
-        
-            -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-              animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-        }
-        
-        @-webkit-keyframes spin {
-            0%   { 
-                -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-                -ms-transform: rotate(0deg);  /* IE 9 */
-                transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-            }
-            100% {
-                -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-                -ms-transform: rotate(360deg);  /* IE 9 */
-                transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-            }
-        }
-        @keyframes spin {
-            0%   { 
-                -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-                -ms-transform: rotate(0deg);  /* IE 9 */
-                transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-            }
-            100% {
-                -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-                -ms-transform: rotate(360deg);  /* IE 9 */
-                transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
-            }
-        }
+#page-loader .preloader-interior {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #8a8a8a;
+  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+#page-loader .preloader-interior:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
 
+  -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
 
-      @-webkit-keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
+#page-loader .preloader-interior:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #007bff;
 
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
+  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
 
-      .fade-in {
-          opacity: 0;
-          -webkit-animation-name: fade-in;
-                animation-name: fade-in;
-                animation-duration: 0.4s;
-          animation-fill-mode: forwards;
-          animation-delay: 1s;
-      }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-      @-webkit-keyframes fade-out-up {
-        0% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          opacity: 1;
-        }
-        80% {
-          -webkit-transform: translateY(-500px);
-                  transform: translateY(-500px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-                  opacity: 0;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-        }
-      }
+.fade-in {
+  opacity: 0;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
 
-      @keyframes fade-out-up {
-        0% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          opacity: 1;
-        }
-        80% {
-          -webkit-transform: translateY(-500px);
-                  transform: translateY(-500px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-                  opacity: 0;
+@-webkit-keyframes fade-out-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
 
-        }
-      }
+@keyframes fade-out-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
 
-      .fade-out-up {
-        -webkit-animation-name: fade-out-up;
-                animation-name: fade-out-up;
-                animation-duration: 0.4s;
-                animation-fill-mode: forwards;
-                animation-delay: 0.3s;
-      }
+.fade-out-up {
+  -webkit-animation-name: fade-out-up;
+  animation-name: fade-out-up;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
 
 body::-webkit-scrollbar {
   width: 11px;
@@ -250,7 +245,8 @@ body::-webkit-scrollbar-thumb {
   padding-top: 70px;
 }
 
-#inputEmail, #inputPassword {
+#inputEmail,
+#inputPassword {
   margin-bottom: 15px;
 }
 
@@ -263,7 +259,7 @@ body::-webkit-scrollbar-thumb {
   list-style-image: url("../img/check.gif");
   margin-top: 10%;
   margin-left: 60px;
-  opacity: 0;  
+  opacity: 0;
 }
 
 body > div.animsition.bg-light > main > section > div > div > ul > li {
@@ -275,7 +271,7 @@ section.images {
   display: flex;
   flex-wrap: wrap;
   margin-left: 100px;
-  position:absolute;
+  position: absolute;
   margin-top: 120px;
   width: 1000px;
 }
@@ -286,89 +282,91 @@ section.images img {
 }
 
 /* cajas del jumbotron blureadas */
-      .blure {
-        backdrop-filter: blur(5px);
-        overflow: hidden;
-        position: absolute;
-        height: 70vh;
-        width: 30vw;
-        box-shadow: 1px 10px 30px -5px black;
-        border-radius: 2%;
-        left: 62% !important;
-        top: 7em !important;
-        transition: all 0.3s ease 0s;
-      }
+.blure {
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  position: absolute;
+  height: 70vh;
+  width: 30vw;
+  box-shadow: 1px 10px 30px -5px black;
+  border-radius: 2%;
+  left: 62% !important;
+  top: 7em !important;
+  transition: all 0.3s ease 0s;
+}
 
-      .blure2 {
-        background-color: white;
-        overflow: hidden;
-        position: absolute;
-        height: 30em;
-        width: 30%;
-        box-shadow: 1px 10px 30px -5px black;
-        border-radius: 2%;
-        left: 62% !important;
-        top: 7em !important;
-        transition: all 0.3s ease 0s;
-      }
+.blure2 {
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  height: 30em;
+  width: 30%;
+  box-shadow: 1px 10px 30px -5px black;
+  border-radius: 2%;
+  left: 62% !important;
+  top: 7em !important;
+  transition: all 0.3s ease 0s;
+}
 
-      .blureview {
-        backdrop-filter: blur(5px);
-        overflow: hidden;
-        position: absolute;
-        height: 35em;
-        width: 45%;
-        box-shadow: 1px 10px 30px -5px black;
-        border-radius: 2%;
-        left: 50% !important;
-        transition: all 0.3s ease 0s;
-      }
+.blureview {
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  position: absolute;
+  height: 35em;
+  width: 45%;
+  box-shadow: 1px 10px 30px -5px black;
+  border-radius: 2%;
+  left: 50% !important;
+  transition: all 0.3s ease 0s;
+}
 
-      .blure:hover{
-        transform: scale(1.005);
-        box-shadow: 1px 10px 35px -5px black;
-      }
+.blure:hover {
+  transform: scale(1.005);
+  box-shadow: 1px 10px 35px -5px black;
+}
 
-      .center {
-        position: absolute;
-        margin: auto;
-        top: 5%;
-        bottom: 5%;
-        left: 5%;
-        right: 5%;
-      }
+.center {
+  position: absolute;
+  margin: auto;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+}
 
-      .center p:nth-child(2) {
-          color: white;
-          text-shadow: 1px 4px 4px black;
-        }
+.center p:nth-child(2) {
+  color: white;
+  text-shadow: 1px 4px 4px black;
+}
 
-        #front > main > div.jumbotron.jumboindex > div > div > p:nth-child(3) > a {
-          display: block;
-          position: absolute;
-          top: 54vh;
-        }
-        #front > main > div.jumbotron.jumboindex > div > div > h1 {
-          font-size: 6vw;
-        }
+#front > main > div.jumbotron.jumboindex > div > div > p:nth-child(3) > a {
+  display: block;
+  position: absolute;
+  top: 54vh;
+}
+#front > main > div.jumbotron.jumboindex > div > div > h1 {
+  font-size: 6vw;
+  text-shadow: 0px 3px 6px black;
+  color: white;
+}
 
 .form-signin {
   margin: 5%;
   width: 50%;
   margin-left: 26%;
   padding: 5%;
-
 }
 
 body > div.animsition > div > form > button {
   margin: 20px;
 }
 
-.centertext , .centertextproject {
+.centertext,
+.centertextproject {
   justify-content: center;
   text-align: center !important;
 }
-.centertext{
+.centertext {
   padding-top: 15px;
   margin-bottom: 30px;
 }
@@ -380,377 +378,394 @@ body > div.animsition > div > form > button {
   margin-top: 20px;
 }
 
-#front > main > section > div > div > form > div > div > label, #fupForm > div > label {
+#front > main > section > div > div > form > div > div > label,
+#fupForm > div > label {
   display: table-caption;
 }
-#fupForm > input{
+#fupForm > input {
   margin: 3% 75% 0px 0px;
 }
 
 #list {
   margin-left: 162px;
 }
-  
-  /* Mockup animado iphone */
-      .box {
-        text-align: left !important;
-        margin-top: 21%;
-        position: relative;
-        width: 700px;
-        height: 450px;
-        margin-left: 0;
-        animation-name: boxmove;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 2s; }
 
-    @keyframes boxmove {
+/* Mockup animado iphone */
+.box {
+  text-align: left !important;
+  margin-top: 21%;
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin-left: 0;
+  animation-name: boxmove;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
 
-        0% {   }
-        100% {  
-            transform: rotate(43deg)  
-            translate3d(-50px,100px,100px);
-            }
-    }
+@keyframes boxmove {
+  0% {
+  }
+  100% {
+    transform: rotate(43deg) translate3d(-50px, 100px, 100px);
+  }
+}
 
-    .box .screen {
-      top: 0;
-      left: 0;
-      width: 30em;
-      position: absolute;
-    }
+.box .screen {
+  top: 0;
+  left: 0;
+  width: 30em;
+  position: absolute;
+}
 
-    .mockup {
-      width: 30em;
-      z-index: -1;
-    }
+.mockup {
+  width: 30em;
+  z-index: -1;
+}
 
-    .screen.screen3 {
+.screen.screen3 {
+  animation-name: screens2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  transition: ease-in 0.5s;
+}
 
-      animation-name: screens2;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-delay: 2.5s;
-      transition: ease-in 0.5s;
-    }
+@keyframes screens2 {
+  0% {
+  }
+  100% {
+    transform: translateY(-120px);
+    opacity: 1;
+  }
+}
 
-    @keyframes screens2 {
-      0% {  }
-      100% {transform: translateY(-120px);
-      opacity: 1;
-    }
-    }
+.screen.screen2 {
+  animation-name: screens3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  transition: ease-in 0.5s;
+}
 
-    .screen.screen2 {
-      animation-name: screens3;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-delay: 2.5s;
-      transition: ease-in 0.5s;
+@keyframes screens3 {
+  0% {
+  }
+  100% {
+    transform: translateY(-80px);
+    opacity: 0.75;
+  }
+}
 
-    }
+.screen.screen1 {
+  animation-name: screens4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  transition: ease-in 0.5s;
+}
 
-    @keyframes screens3 {
-      0% {  }
-      100% {     transform: translateY(-80px);
-      opacity: 0.75;
-    }
-    }
-
-    .screen.screen1 {
-      animation-name: screens4;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-delay: 2.5s;
-      transition: ease-in 0.5s;
-      
-    }
-
-    @keyframes screens4 {
-      0% {  }
-      100% {transform: translateY(-40px);
-      opacity: 0.5;
-    }
-    }
-    .screen.screen0 {
-          animation-name: screens5;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-delay: 2.5s;
-      transition: ease-in 0.5s;
-    }
-    @keyframes screens5 {
-      0% {  }
-      100% {     opacity: 0.25;
-
-    }}
+@keyframes screens4 {
+  0% {
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0.5;
+  }
+}
+.screen.screen0 {
+  animation-name: screens5;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  transition: ease-in 0.5s;
+}
+@keyframes screens5 {
+  0% {
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
 
 /* Input de imagen */
 
-      .thumb {
-        width: 25%;
-        position: absolute;
-        display: block;
-        top: 299px;
-      }
-      #projects_form_image {
-        visibility: hidden;
-        position: relative;
-        border-bottom-width: 0px;
-      }
-      #projects_form_image::before {
-        content: 'Select some files';
-        display: inline-block;
-        background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
-        border: 1px solid #999;
-        border-radius: 3px;
-        padding: 5px 8px;
-        outline: none;
-        white-space: nowrap;
-        -webkit-user-select: none;
-        cursor: pointer;
-        text-shadow: 1px 1px #fff;
-        font-weight: 700;
-        font-size: 10pt;
-        visibility: visible;
-        position: absolute;
-      }
-      #projects_form_image:hover::before {
-        border-color: black;
-      }
-      #projects_form_image:active::before {
-        background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-      }
-      .page-footer {
-        background-color: #343a40;
-          color: whitesmoke;
-      }
+.thumb {
+  width: 25%;
+  position: absolute;
+  display: block;
+  top: 299px;
+}
+#projects_form_image {
+  visibility: hidden;
+  position: relative;
+  border-bottom-width: 0px;
+}
+#projects_form_image::before {
+  content: "Select some files";
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  visibility: visible;
+  position: absolute;
+}
+#projects_form_image:hover::before {
+  border-color: black;
+}
+#projects_form_image:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.page-footer {
+  background-color: #343a40;
+  color: whitesmoke;
+}
 
-      body > div.animsition > main > section > div > div > form > div > div > label {
-        display: table-caption;
-      }
+body > div.animsition > main > section > div > div > form > div > div > label {
+  display: table-caption;
+}
 
-      #projects_form_image{
-        padding-left: 0px;
-      }
+#projects_form_image {
+  padding-left: 0px;
+}
 
 /* Icono de navbar collapse */
 
-      .animated-icon1 {
-        width: 30px;
-        height: 20px;
-        position: relative;
-        margin: 0px;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        cursor: pointer;
-        }
-        
-        .animated-icon1 span {
-        display: block;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        border-radius: 9px;
-        opacity: 1;
-        left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out;
-        }
-        
-        .animated-icon1 span {
-        background: #ffffff;
-        }
-        
-        .animated-icon1 span:nth-child(1) {
-        top: 0px;
-        }
-        
-        .animated-icon1 span:nth-child(2) {
-        top: 10px;
-        }
-        
-        .animated-icon1 span:nth-child(3) {
-        top: 20px;
-        }
-        
-        .animated-icon1.open span:nth-child(1) {
-        top: 11px;
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -o-transform: rotate(135deg);
-        transform: rotate(135deg);
-        }
-        
-        .animated-icon1.open span:nth-child(2) {
-        opacity: 0;
-        left: -60px;
-        }
-        
-        .animated-icon1.open span:nth-child(3) {
-        top: 11px;
-        -webkit-transform: rotate(-135deg);
-        -moz-transform: rotate(-135deg);
-        -o-transform: rotate(-135deg);
-        transform: rotate(-135deg);
-        }
-        
-        body > nav > button:focus {
-          outline: unset !important;
-        }
+.animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
 
-        .navbar-toggler {
-          border: 0 !important;
-        }
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: #ffffff;
+}
+
+.animated-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+body > nav > button:focus {
+  outline: unset !important;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
 
 /* desktop screens */
 @media only screen and (min-width: 600px) {
+  #navbarsExampleDefault > ul.navbar-nav.mr-auto > li {
+    width: 6em;
+    text-align: center;
+  }
 
-          #navbarsExampleDefault > ul.navbar-nav.mr-auto > li {
-            width: 6em;
-            text-align: center;
-          }
+  body > nav {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 60px;
+  }
 
-          body > nav{
-          padding-bottom: 0px;
-            padding-top: 0px;
-            height: 60px;
-          }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+  .current-nav {
+    animation-name: current;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    transition: ease-in 0.5s;
+  }
 
-          .navbar-expand-md .navbar-nav .nav-link {
-            padding-bottom: 20px;
-            padding-top: 15px;
-          }
-          .current-nav{
-            animation-name: current;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-            animation-delay: 0s;
-            transition: ease-in 0.5s;
-          }
+  .bye-current-nav {
+    animation-name: bye-current;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    transition: ease-in 0.5s;
+  }
 
-          .bye-current-nav{
-            animation-name: bye-current;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-            animation-delay: 0s;
-            transition: ease-in 0.5s;
-          }
-
-              @keyframes current {
-              0% {  }
-              100% {    
-                background-color: #53585d;
-                /*text-transform: uppercase;*/
-              }}
-
-              @keyframes bye-current {
-                0% { background-color: #53585d;
-                  /*text-transform: uppercase;*/  }
-                100% {    
-                background-color: #00000000;
-                /*text-transform: capitalize;*/
-              }}
-              }
-
-   /* Small screens */
-@media only screen and (max-width: 600px) {
-
-        .navbar-brand{
-          padding-top: 0 !important;
-          padding-bottom: 0 !important;
-        }
-        #navbarsExampleDefault > ul.navbar-nav.mr-auto > li.nav-item > a {
-          text-align: center;
-        }
-
-        .current-nav{
-          animation-name: current;
-          animation-duration: 0s;
-          animation-fill-mode: forwards;
-          animation-delay: 0s;
-        }
-
-        @keyframes current {
-          0% {  }
-          100% {    
-          background-color: #53585d6e;
-        }}
-
-        #page-loader {
-          top: 57px;
-          height: 90vh;
-        }
-        .preloader-interior {
-          left: 55%;
-          top: 55%;
-          width: 100px;
-          height: 100px;
-        }
-        #navbarsExampleDefault > ul.navbar-nav.mr-auto > li.nav-item.dropdown, 
-        .box, body > footer > div.container-fluid > div > div:nth-child(5), div:nth-child(7), hr:nth-child(4), hr:nth-child(6) {
-          display: none;
-        }
-
-        .encabezado {
-          width: 80%;
-        }
-
-        body p {
-          font-size: 3vh;
-        }
-        .jumboindex{
-          background: url('../img/fondo2.jpg')  no-repeat center center fixed;
-          background-size: cover;
-          box-sizing: border-box;
-        }
-        .center {
-          position: absolute;
-          margin: auto;
-        }
-        /* cajas del jumbotron */
-        .blure, .blure2, .blureview {
-          backdrop-filter: blur(5px);
-          overflow: hidden;
-          position: absolute;
-          height: 86vh;
-          width: 93vw;
-          box-shadow: 1px 10px 30px -5px black;
-          border-radius: 2%;
-          left: 3% !important;
-          top: 12%!important;
-        }
-
-        .center > p {
-          margin-bottom: 17%;
-        }
-
-        .form-signin {
-          margin: 0px;
-          margin-left: 0;
-          margin-right: 0;
-          width: 100%;
-        }
-
-        #front > main > div.jumbotron.jumboindex > div > div > h1 {
-          font-size: 12vh;
-      }
-      #front > main > div.jumbotron.jumboindex > div > div > p:nth-child(3) > a {
-        position: initial;
-        top: 69vh;
+  @keyframes current {
+    0% {
     }
+    100% {
+      background-color: #53585d;
+      /*text-transform: uppercase;*/
+    }
+  }
+
+  @keyframes bye-current {
+    0% {
+      background-color: #53585d;
+      /*text-transform: uppercase;*/
+    }
+    100% {
+      background-color: #00000000;
+      /*text-transform: capitalize;*/
+    }
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #navbarsExampleDefault > ul.navbar-nav.mr-auto > li.nav-item > a {
+    text-align: center;
+  }
+
+  .current-nav {
+    animation-name: current;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+  @keyframes current {
+    0% {
+    }
+    100% {
+      background-color: #53585d6e;
+    }
+  }
+
+  #page-loader {
+    top: 57px;
+    height: 90vh;
+  }
+  .preloader-interior {
+    left: 55%;
+    top: 55%;
+    width: 100px;
+    height: 100px;
+  }
+  #navbarsExampleDefault > ul.navbar-nav.mr-auto > li.nav-item.dropdown,
+  .box,
+  body > footer > div.container-fluid > div > div:nth-child(5),
+  div:nth-child(7),
+  hr:nth-child(4),
+  hr:nth-child(6) {
+    display: none;
+  }
+
+  .encabezado {
+    width: 80%;
+  }
+
+  body p {
+    font-size: 3vh;
+  }
+  .jumboindex {
+    background: url("../img/fondo2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  .center {
+    position: absolute;
+    margin: auto;
+  }
+  /* cajas del jumbotron */
+  .blure,
+  .blure2,
+  .blureview {
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    position: absolute;
+    height: 86vh;
+    width: 93vw;
+    box-shadow: 1px 10px 30px -5px black;
+    border-radius: 2%;
+    left: 3% !important;
+    top: 12% !important;
+  }
+
+  .center > p {
+    margin-bottom: 17%;
+  }
+
+  .form-signin {
+    margin: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #front > main > div.jumbotron.jumboindex > div > div > h1 {
+    font-size: 12vh;
+  }
+  #front > main > div.jumbotron.jumboindex > div > div > p:nth-child(3) > a {
+    position: initial;
+    top: 69vh;
+  }
 }
 
 /*Sombras y zoom de las cards projects*/
@@ -765,21 +780,21 @@ body > div.animsition > div > form > button {
   animation-delay: 0.8s;
 }
 
-#front > main > div > div > div > div > div:hover{
+#front > main > div > div > div > div > div:hover {
   transform: scale(1.03);
   box-shadow: 0px 0px 20px 2px #00000085;
 }
 
 @keyframes cardproject {
+  0% {
+    opacity: 0;
+    /* transform: scale(0.7);*/
+  }
 
-    0% {  opacity: 0;
-         /* transform: scale(0.7);*/
-    }
-
-    100% {  
-            opacity: 1;
-            /*transform: scale(1);*/
-        }
+  100% {
+    opacity: 1;
+    /*transform: scale(1);*/
+  }
 }
 
 /* INTERSECTION OBSERVER */
@@ -790,9 +805,9 @@ body > div.animsition > div > form > button {
 
 @keyframes anim1 {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
